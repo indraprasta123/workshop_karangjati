@@ -1,0 +1,23 @@
+.contact {
+    &__location {
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        &__maps {
+            width: 100%;
+            iframe {
+                width: 100%;
+            }
+        }
+        &__linkToMaps {
+            a {
+                color: white;
+                background: #ef002a;
+                padding: 10px 15px;
+            }
+        }
+    }
+}
+

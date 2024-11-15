@@ -1,0 +1,197 @@
+.footer {
+    background-color: #212121;
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #ef002a;
+        padding: 40px;
+        h2 {
+            color: white;
+        }
+        a {
+            color: white;
+            border: 2px solid white;
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 160px;
+            height: 50px;
+        }
+    }
+    &__feature {
+        padding: 40px;
+    }
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        color: white;
+    }
+    &__about {
+        max-width: 30%;
+        img {
+            width: 220px;
+        }
+    }
+    &__information {
+        &__list {
+            line-height: 40px;
+            a {
+                color: white;
+            }
+        }
+    }
+    &__contact {
+        max-width: 40%;
+        &__sosmed {
+            display: flex;
+            gap: 15px;
+        }
+        &__url {
+            color: white;
+            display: flex;
+            border: 1px solid white;
+            border-radius: 30px;
+            width: 30px;
+            height: 30px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            &:hover {
+                transition: 0.2s ease-in;
+                background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+                border: 1px solid #dc2743;
+            }
+            img {
+                width: 15px;
+            }
+        }
+        .youtube:hover {
+            background: #ef002a;
+            border: 1px solid #ef002a;
+            transition: 0.2s ease-in;
+        }
+        .tiktok {
+            background: white;
+            &:hover {
+                border: 1px solid white;
+            }
+        }
+    }
+    &__copyright {
+        padding: 20px;
+        border-top: 2px solid rgba(73, 74, 75, 0.3490196078);
+        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.8509803922);
+        background: #212121;
+        color: white;
+        text-align: center;
+        img {
+            position: fixed;
+            bottom: 35px;
+            right: 20px;
+        }
+    }
+}
+
+@media only screen and (max-width: 991.98px) {
+    .footer {
+        &__header {
+            text-align: center;
+            flex-direction: column;
+        }
+        &__about {
+            img {
+                width: 200px;
+            }
+        }
+    }
+    //Responsive to Mobile
+    @media only screen and (max-width: 767.98px) {
+        .footer {
+            &__header {
+                h2 {
+                    line-height: 30px;
+                }
+                a {
+                    width: 140px;
+                    height: 40px;
+                }
+            }
+            &__content {
+                flex-direction: column;
+                position: relative;
+            }
+            &__about {
+                max-width: 100%;
+                text-align: center;
+            }
+            &__contact {
+                max-width: 100%;
+            }
+            &__copyright {
+                img {
+                    width: 60px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 575.86px) {
+    .footer {
+        &__header {
+            a {
+                width: 135px;
+                height: 38px;
+            }
+        }
+        &__about {
+            img {
+                width: 170px;
+            }
+        }
+        &__contact {
+            &__url {
+                img {
+                    width: 13px;
+                }
+            }
+        }
+        &__copyright {
+            img {
+                width: 50px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 320.98px) {
+    .footer {
+        &__header {
+            a {
+                width: 115px;
+                height: 33px;
+            }
+        }
+        &__about {
+            img {
+                width: 150px;
+            }
+        }
+        &__contact {
+            &__url {
+                img {
+                    width: 12px;
+                }
+            }
+        }
+        &__copyright {
+            img {
+                width: 40px;
+            }
+        }
+    }
+}

@@ -1,0 +1,123 @@
+.history {
+    padding: 40px;
+    &__wrapper {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    &__desc {
+        width: 50%;
+        h2 {
+            font-weight: 900;
+        }
+        h3 {
+            color: #ef002a;
+        }
+        a {
+            color: #ef002a;
+            font-weight: bold;
+        }
+    }
+    &__images {
+        position: relative;
+        &__welder {
+            width: 400px;
+        }
+        &__percikan {
+            position: absolute;
+            left: 30px;
+            top: 40px;
+        }
+    }
+}
+.bg-azure {
+    background-color: #f0f6fc;
+}
+
+@media only screen and (max-width: 991.98px) {
+    .history {
+        &__wrapper {
+            flex-direction: column;
+            align-items: center;
+            gap: 50px;
+        }
+        &__desc {
+            width: 100%;
+        }
+        &__images {
+            &__welder {
+                width: 350px;
+            }
+            &__percikan {
+                width: 350px;
+                left: 55px;
+                top: 60px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767.98px) {
+    .history {
+        padding: 30px;
+        &__images {
+            &__welder {
+                width:280px;
+            }
+            &__percikan {
+                width: 280px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 575.86px) {
+    .history {
+        &__wrapper {
+            gap: 40px;
+        }
+        &__images {
+            &__welder {
+                width:280px;
+            }
+            &__percikan {
+                width: 280px;
+                top: 50px;
+                left: 50px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 450.86px) {
+    .history {
+        &__wrapper {
+            gap: 30px;
+        }
+        &__images {
+            &__welder {
+                width:220px;
+            }
+            &__percikan {
+                width: 220px;
+                top: 40px;
+                left: 40px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 320.98px) {
+    .history {
+        &__images {
+            &__welder {
+                width:170px;
+            }
+            &__percikan {
+                width: 170px;
+                top: 40px;
+                left: 40px;
+            }
+        }
+    }
+}

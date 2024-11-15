@@ -1,0 +1,89 @@
+.contact {
+    &__info {
+        margin-bottom: 40px;
+        padding: 40px;
+        &__wrap {
+            display: flex;
+            gap: 40px;
+            justify-content: center;
+        }
+        &__box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 50%;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 0 7px 0 rgba(100, 100, 100, 0.5);
+        }
+        &__sosmed {
+               &__flex {
+                display: flex;
+                gap: 10px;
+                a {
+                    color: black;
+                    display: flex;
+                    border: 2px solid black;
+                    border-radius: 30px;
+                    width: 35px;
+                    height: 35px;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    &:hover {
+                        transition: 0.2s ease-in;
+                        background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+                        border: 2px solid #dc2743;
+                        color: white;
+                    }
+                    i {
+                        font-size: 17px;
+                    }
+                    img {
+                        width: 16px;
+                    }
+                }
+                .yt:hover {
+                    background: #ef002a;
+                    border: 2px solid #ef002a;
+                    transition: 0.2s ease-in;
+                    color: white;
+                }
+                a.tktk {
+                    background: white;
+                    &:hover {
+                        border: 2px solid black;
+                    }
+                }
+               } 
+        }
+    }
+}
+
+@media only screen and (max-width: 767.98px) {
+    .contact {
+        &__info {
+            &__wrap {
+                flex-direction: column;
+                align-items: center;
+            }
+            &__box {
+                width: 80%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 575.86px) {
+    .contact {
+        &__info {
+            &__box {
+                width: 60%;
+                img {
+                    width: 50px;
+                }
+            }
+        }
+    }
+}

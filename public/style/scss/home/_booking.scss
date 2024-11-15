@@ -1,0 +1,215 @@
+.booking {
+    background: #f0f6fc;
+    padding: 40px;
+    &__header {
+        text-align: center;
+        p {
+            color: #ef002a;
+        }
+    }
+    &__step {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        margin-top: 40px;
+        &__feature {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &::before {
+                content: "";
+                height: 100%;
+                background: #d1cece9e;
+                width: 4px;
+                position: absolute;
+                
+            }
+        }
+        &__box {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 60px;
+            #step-1 {
+                left: 165px;
+            }
+            #step-2 {
+                left: -193px;
+                &::before {
+                    display: none;
+                }
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 10px;
+                    right: -20px;
+                    height: 0;
+                    width: 0;
+                    border: 10px solid transparent;
+                    border-left: 10px solid #ffffff;
+                }
+            }
+            #step-3 {
+                left: 168px;
+            }
+            #step-4 {
+                left: -153px;
+                &::before {
+                    display: none;
+                }
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 10px;
+                    right: -20px;
+                    height: 0;
+                    width: 0;
+                    border: 10px solid transparent;
+                    border-left: 10px solid #ffffff;
+                }
+            }
+            .left-side-img1 {
+                left: unset;
+                right: 0;
+            }
+            .left-side-img2 {
+                left: unset;
+                right: -50px;
+            }
+        }
+        &__content {
+            position: relative;
+        }
+        &__circle {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            box-shadow: 0 0 0 4px #ffffff, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+            background: rgb(116, 139, 247);
+        }
+        &__txt {
+            position: relative;
+            background: #ffffff;
+            border-radius: 3px;
+            padding: 2px 18px;
+            bottom: 10px;
+            color: #868686;
+            &::before {
+                content: "";
+                position: absolute;
+                top: 10px;
+                left: -20px;
+                height: 0;
+                width: 0;
+                border: 10px solid transparent;
+                border-right: 10px solid #ffffff;
+            }
+            h3 {
+                color: black;
+                text-align: center;
+            }
+        }
+        &__img {
+            position: absolute;
+            top: 0;
+            left: -20px;
+            img {
+                width: 55px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767.98px) {
+    .booking {
+        padding: 30px 40px 30px 30px;
+        &__step {
+            display: block;
+            &__feature {
+                display: block;
+            }
+            &__box {
+                display: block;
+                max-width: 100%;
+                margin-top: 50px;
+                #step-1 {
+                    left: unset;
+                }
+                #step-2 {
+                    left: unset;
+                    &::before {
+                        display: none;
+                    }
+                    &::after {
+                        display: none;
+                    }
+                }
+                #step-3 {
+                    left: unset;
+                }
+                #step-4 {
+                    left: unset;
+                    &::before {
+                        display: none;
+                    }
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
+            &__circle {
+                left: -7px;
+                top: 20px;
+            }
+            &__content {
+                position: relative;
+                left: 40px;
+                top: 12px;
+                max-width: 90%;
+                background: white;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 20px 0px;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 10px;
+                    left: -20px;
+                    height: 0;
+                    width: 0;
+                    border: 10px solid transparent;
+                    border-right: 10px solid #ffffff;
+                }
+            }
+            &__txt {
+                background: none;
+                text-align: center;
+            }
+            &__img {
+                position: static;
+                img {
+                    width: 50px;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 575.86px) {
+        .booking {
+            &__step {
+                &__content {
+                    left: 35px;
+                }
+                &__img {
+                    img {
+                        width: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
